@@ -37,7 +37,7 @@
 			<div class="form-group">
 				<label for="lunchItems" class="col-xs-12 col-sm-3 control-label">Lunch items</label>
 				<div class="col-xs-12 col-sm-6">
-					<input type="text" class="form-control" id="luncItems" name="lunchItems" placeholder="Enter your lunch items" ng-model="lunchItems" ng-keyup="clearFeedback()">
+					<input type="text" class="form-control {{borderColor}}" id="luncItems" name="lunchItems" placeholder="Enter your lunch items" ng-model="lunchItems" ng-keyup="clearFeedback()">
 				</div>
 				<div class="col-xs-12 col-sm-3">Empty items ' , ,' or ',,' are not considered towards the count </div>
 			</div>
@@ -47,7 +47,7 @@
 
 			<div class="form-group">
 				<div class="col-xs-4 col-xs-offset-3">
-					<button type="button" class="btn btn-primary" ng-click="checkLunchItems()">Check</button>
+					<button type="button" class="btn btn-primary" ng-click="checkLunchItems()">Check If Too Much</button>
 				</div>
 			</div>
 		</form>
