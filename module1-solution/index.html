@@ -37,11 +37,11 @@
 			<div class="form-group">
 				<label for="lunchItems" class="col-xs-12 col-sm-3 control-label">Lunch items</label>
 				<div class="col-xs-12 col-sm-6">
-					<input type="text" class="form-control" id="luncItems" name="lunchItems" placeholder="Enter your lunch items" ng-model="lunchItems">
+					<input type="text" class="form-control" id="luncItems" name="lunchItems" placeholder="Enter your lunch items" ng-model="lunchItems" ng-keyup="clearFeedback()">
 				</div>
-				<div class="col-xs-12 col-sm-3">{{emptyItemsConsidered}}</div>
+				<div class="col-xs-12 col-sm-3">Empty items ' , ,' or ',,' are not considered towards the count </div>
 			</div>
-			<div class="col-xs-12 col-xs-offset-6" id="feedback">
+			<div class="col-xs-12 col-xs-offset-6 {{textColorClass}}">
 			{{lunchFeedback}}
 			</div>
 
@@ -62,6 +62,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js" integrity="sha256-3SrLjPeRPa1ofM280r+OMcUjJZKLWJHr6SRtRu3dRb0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
